@@ -1,94 +1,18 @@
-/** HEADER **/
-
-body{
-    font-size: 18px;
-    word-spacing: 1px;
-    line-height: 26px;
-    font-family: "freightsans_regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 300;
-    text-transform: none;
-    letter-spacing: 0;
-    color: #6b6b6b;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-font-smoothing: antialiased;
-
+@font-face {
+    font-family: Cinzel-Regular;
+    src: url('../fonts/cinzel/Cinzel-Regular.otf');
 }
 
-.page-border{
-    background: #F5F5F5;
-    height: 100%;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+@font-face {
+    font-family: CinzelDecorative-Regular;
+    src: url('../fonts/cinzel/CinzelDecorative-Regular.otf');
 }
 
-
-.header ul{
-    display: flex;
-    list-style: none;
+@font-face {
+    font-family: Cinzel-Bold;
+    src: url('../fonts/cinzel/Cinzel-Bold.otf');
 }
 
-
-
-.header{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.header a{
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-
-.header a {
-    color: #818080;
-    font-size: 1.2em;
-    text-decoration: none;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-}
-
-.header li{
-    margin-left: 20px;
-}
-
-
-.header a:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    right: 100%;
-    bottom: 50%;
-    background: rgb(2, 242, 198);
-    height: 1.5px; 
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  
-
-}
-
-.header a:hover {
-    opacity: 1 !important;
-    color: rgb(2, 242, 198);
-    transition-duration: 0.5s;
-
-}
-
-.header a:hover:before {
-    right: 0;
-}
-.header a:before {
-    bottom: -2px;
-}
 
 
 
@@ -141,7 +65,7 @@ body{
     opacity: 1 !important;
     color: lightgrey;
     transition-duration: 0.5s;
-
+    
 }
 
 .header a:hover:before {
@@ -152,11 +76,11 @@ body{
 }
 
 
- */
+*/
 
 
 /* body{
-background: url(../images/plano-de-fundo.png);
+    background: url(../images/plano-de-fundo.png);
 } */
 
 
@@ -176,8 +100,7 @@ background: url(../images/plano-de-fundo.png);
 
 
 .footer ul{
-    display: flex;
-    justify-content: space-around;
+    
     list-style: none;
 }
 
