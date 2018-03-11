@@ -16,7 +16,7 @@
 /** FONTE **/
 
 .fonte-padrao{
-    color: rgb(114, 114, 114);
+    color: rgb(168, 168, 168);
     letter-spacing: 3px;
 }
 
@@ -25,7 +25,10 @@
 
 /** HEADER **/
 
-
+.link-seta{
+    position: relative;
+    top: 20%;
+}
 
 .logo{
     width: 80px;
@@ -57,7 +60,7 @@ body{
 
 .lista{
     list-style: none;
-    padding-left: 0;
+    margin-top: 17px;
 }
 
 
@@ -98,7 +101,7 @@ body{
     transition-duration: 0.8s;
 }
 
-.item-menu:before {
+.efeito-underline:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -120,7 +123,7 @@ body{
     
 }
 
-.item-menu:hover:before {
+.efeito-underline:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -165,6 +168,7 @@ body{
     text-transform: uppercase;
     font-size: 5rem;
     color: #33b688;
+    
 }
 
 hr {
@@ -229,7 +233,7 @@ hr {
 .typed-area{
     margin-bottom: 10px;
     position: relative;
-    top: 10px;
+    top: 34px;
 }
 
 
@@ -248,8 +252,7 @@ img.lazy {
 
 
 .apresentacao {  
-    bottom: 20px;
-    height: 180px;
+    bottom: 45px;
     width: 100%;
     pointer-events: visibleFill; 
     position: relative;
@@ -302,6 +305,11 @@ img.lazy {
 }
 
 .animacao1{
+    position: relative;
+    top: 60px;
+    left: 28%;
+
+
     text-transform: lowercase;
     -webkit-animation-fill-mode:both;
     -moz-animation-fill-mode:both;
@@ -320,6 +328,8 @@ img.lazy {
     -o-animation-delay:5s;
     animation-delay:5s;   
 }
+
+
 
 .animacao3{
     
@@ -457,7 +467,7 @@ img.lazy {
     /* padding: 50px 0; */
     position: fixed;
     height: 55px;
-    background-color: rgba(0, 0, 0, 0.9)
+    background-color:#5c5c5cbd;
 }
 button{
     font-size: 20px;
