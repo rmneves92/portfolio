@@ -1,16 +1,16 @@
 @font-face {
-    font-family: Cinzel-Regular;
-    src: url('../fonts/cinzel/Cinzel-Regular.otf');
+    font-family: Hero;
+    src: url('../fonts/hero/Hero.otf');
 }
 
 @font-face {
-    font-family: CinzelDecorative-Regular;
-    src: url('../fonts/cinzel/CinzelDecorative-Regular.otf');
+    font-family: HeroLight;
+    src: url('../fonts/hero/HeroLight.otf');
 }
 
 @font-face {
-    font-family: Cinzel-Bold;
-    src: url('../fonts/cinzel/Cinzel-Bold.otf');
+    font-family: FiraSans-Regular;
+    src: url('../fonts/FiraSans-Regular.otf');
 }
 
 

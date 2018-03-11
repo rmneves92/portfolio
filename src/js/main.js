@@ -1,72 +1,133 @@
 $(function(){
+    $('.lazy').lazy({
+        effect: "fadeIn",
+        effectTime: 5000,
+        threshold: 0
+      });
+        
 
-    $(".titulo-principal, .teste").fadeIn(2000);
-
-    $(".teste").delay(1000).animate({top: "100px"});
-})
-
+      setTimeout(function() {
+        $("p.animacao1").addClass("fadeOutLeft"); 
+  },7000);
 
 
-/* =============================
-var colors = new Array(
-    [62,35,255],
-    [60,255,60],
-    [255,35,98],
-    [45,175,230],
-    [255,0,255],
-    [255,128,0]);
-  
-  var step = 0;
-  //color table indices for: 
-  // current color left
-  // next color left
-  // current color right
-  // next color right
-  var colorIndices = [0,1,2,3];
-  
-  //transition speed
-  var gradientSpeed = 0.002;
-  
-  function updateGradient()
-  {
-    
-    if ( $===undefined ) return;
-    
-  var c0_0 = colors[colorIndices[0]];
-  var c0_1 = colors[colorIndices[1]];
-  var c1_0 = colors[colorIndices[2]];
-  var c1_1 = colors[colorIndices[3]];
-  
-  var istep = 1 - step;
-  var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-  var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-  var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-  var color1 = "rgb("+r1+","+g1+","+b1+")";
-  
-  var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-  var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-  var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-  var color2 = "rgb("+r2+","+g2+","+b2+")";
-  
-   $('#gradient').css({
-     background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
-      background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
-    
-    step += gradientSpeed;
-    if ( step >= 1 )
-    {
-      step %= 1;
-      colorIndices[0] = colorIndices[1];
-      colorIndices[2] = colorIndices[3];
+
+  // effect hr
+
+  var toggle = false,
+    hrs = $('hr');
+
+$('.navbar').hover(function(){
+  $.map(hrs, function(val, i){
+    if(toggle === false){
+      $(val)
+          .addClass('grow')
+          .addClass('line-color-change');
       
-      //pick two new target color indices
-      //do not pick the same as the current one
-      colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-      colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    }else{
       
+
+
+        $(val).removeClass('grow')
+        .removeClass('line-color-change');
+     
+       
     }
-  }
-  
-  setInterval(updateGradient,10);
+    
+  });
+  toggle = !toggle;
+});
 
-  */
+
+//--------------
+
+
+  var typed = new Typed('.titulo-principal', {
+    stringsElement: '#element',
+    typeSpeed: 55,
+    backSpeed: 55,
+    startDelay: 3000,
+    
+    shuffle: true,
+    smartBackspace: true,
+    fadeOut: true
+    
+
+  });
+
+
+
+
+    $(".titulo-principal").fadeIn(2000);
+
+
+
+
+
+
+
+
+
+    
+    $(".typed-cursor").css("font-size", "90px");
+    $(".typed-cursor").css("margin-left", "2px");
+ 
+
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                    //$(".navbar").css("background", "black");
+                } else {
+                    $('#back-to-top').removeClass('show');
+                   // $(".navbar").css("background", "white");
+                }
+            };
+      
+            
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+
+            
+
+
+
+        });
+
+
+
+
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+      }
+
+
+});
+
+
+
+
+// MENU FIXO AO SCROLLAR
+
+
+
+
+/*  $(window).scroll(function() {
+	  	
+  var posicaoAtual = $(window).scrollTop();
+  var alturaPortfolio = $(".destaque").position().top-10;
+          
+  if ( posicaoAtual >= alturaPortfolio ) {
+    $(".navbar").fadeOut();
+  } else {
+    $(".navbar").fadeIn();
+  }
+
+}); */
