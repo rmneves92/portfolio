@@ -1,29 +1,199 @@
-/** DISPLAY FLEX **/
-
-.flex{
-    display: flex;
+body{
+    background: black;
+    line-height: 26px;
+    font-family: "FiraSans-Regular", "Arial", sans-serif;
+    font-weight: lighter;
+    text-transform: none;
+    letter-spacing: 0;
+    color: rgb(65, 65, 65);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;   
 }
 
-.flex-column{
-    flex-direction: column;
+#header{
+    background-size: cover;
+    overflow: visible;
+    height: 500px; 
 }
 
-.flex-center{
-    justify-content: center;
-    align-items: center; 
+.efeito-menu{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    height: 55px;
+    background-color:#5c5c5cbd;
 }
 
-/** FONTE **/
+.trans-grow{
+    -webkit-transition: all 2s ease-in-out; /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s  ease-in-out;
+    width : 0;
+}
 
-.fonte-padrao{
+hr{
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255)
+}
+
+.hr1{
+    margin-left: 0;
+}
+
+.hr2{
+    margin-right:0;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;  
+}
+
+.menu-principal{
+    list-style: none;
+    margin-top: 17px;
+}
+
+.menu-principal li a {
+    margin: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    text-decoration: none;
+    word-spacing: 1px;
+    transition-duration: 0.8s;
     color: rgb(168, 168, 168);
     letter-spacing: 3px;
 }
 
+.menu-principal a:hover {
+    opacity: 1 !important;
+    color: #33b688;
+    transition-duration: 0.8s;
+    
+}
+
+.destaque{
+    height: 555px;    
+    background: url(../images/plano-de-fundo2.png) ;
+}
+
+.destaque h1{
+    font-size: 50px;
+}
+
+.destaque h2{  
+    font-size: 20px;
+}
+
+.apresentacao {  
+    bottom: 45px;
+    width: 100%;
+    pointer-events: visibleFill; 
+    position: relative;
+}
 
 
+.texto-apresentacao{
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;    
+    margin: 0 0 0 20px;
+    padding:0;
+}
 
-/** HEADER **/
+.conteudo {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 70px;
+    max-width: 1278px;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:5s;
+    -moz-animation-duration:5s;
+    -ms-animation-duration:5s;
+    -o-animation-duration:5s;
+    animation-duration:5s;  
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.animacao1{
+    font-size: 2rem;
+    position: relative;
+    top: 60px;
+    left: 28%;
+    
+    text-transform: lowercase;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;  
+    -webkit-animation-delay:5s;
+    -moz-animation-delay:5s;
+    -ms-animation-delay:5s;
+    -o-animation-delay:5s;
+    animation-delay:5s;   
+}
+
+.animacao2{
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    -ms-animation-duration:2s;
+    -o-animation-duration:2s;
+    animation-duration:2s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+    -o-animation-delay:1s;
+    animation-delay:1s;   
+}
+
+.animacao3{
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:5s;
+    -moz-animation-duration:5s;
+    -ms-animation-duration:5s;
+    -o-animation-duration:5s;
+    animation-duration:5s;  
+}
+
+.typed-container{
+    margin-bottom: 10px;
+    position: relative;
+    top: 34px;
+}
+
+.typed-container div {
+    height: 2000px;
+}
 
 .link-seta{
     position: relative;
@@ -35,70 +205,12 @@
     margin: 0 40;
 }
 
-a {
+a{
     text-decoration: none;
-}
-
-body{
-    background: black;
-    
-    line-height: 26px;
-    font-family: "FiraSans-Regular", "Arial", sans-serif;
-    font-weight: lighter;
-    text-transform: none;
-    letter-spacing: 0;
-    color: rgb(65, 65, 65);
-    -webkit-tap-highlight-color: transparent;
-    -webkit-font-smoothing: antialiased;
-    
-}
-
-#wrap{
-
-}
-
-
-.lista{
-    list-style: none;
-    margin-top: 17px;
-}
-
-
-.navbar{
-       width: 100%;
-    position: fixed;
-    
-}
-
-#container-menu{
-    height: 50%;
-}
-
-
-#header{
-    
-    background-size: cover;
-    /* background: url(../images/plano-de-fundo.png) ;  */
-    overflow: visible;
-    height: 500px;
-    
 }
 
 #header li+li{
     margin-left: 20px;
-}
-
-.item-menu {
-    margin: 20px;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-decoration: none;
-    position: relative;
-    text-transform: uppercase;
-    text-transform: uppercase;
-    text-decoration: none;
-    word-spacing: 1px;
-    transition-duration: 0.8s;
 }
 
 .efeito-underline:before {
@@ -116,28 +228,13 @@ body{
     transition: all 0.3s ease-in-out 0s;
 }
 
-.item-menu:hover {
-    opacity: 1 !important;
-    color: #33b688;
-    transition-duration: 0.8s;
-    
-}
-
 .efeito-underline:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-
-.destaque{
-    height: 555px;
-    
-    background: url(../images/plano-de-fundo2.png) ;
-}
-
-
-.arrow{
+.seta-baixo{
     content: "";
     display: inline-block;
     width: 3em;
@@ -149,35 +246,27 @@ body{
     transition: 0.8s;
     animation: MoveUpDown 1.5s linear infinite;
     position: relative;
-    opacity: 0.7;
-    
+    opacity: 0.7;  
 }
 
-
-.arrow:hover{
-    
+.seta-baixo:hover{  
     transition: 0.8s;
     opacity: 1;
 }
-
-
-
 
 .titulo-principal{ 
     display: none;
     text-transform: uppercase;
     font-size: 5rem;
-    color: #33b688;
-    
+    color: #33b688;  
 }
 
 hr {
     border: none;
-    height: 1px;
+    height: 2px;
     color: #fff;
     background-color: #fff;
 }
-
 
 @keyframes MoveUpDown {
     0% {
@@ -191,10 +280,7 @@ hr {
     }
 }
 
-
-/* back to top*/
-
-#back-to-top {
+#voltar-ao-topo {
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -212,142 +298,13 @@ hr {
     transition: opacity 0.2s ease-out;
     opacity: 0;
 }
-#back-to-top:hover {
+
+#voltar-ao-topo:hover {
     background: #888888;
 }
-#back-to-top.show {
+
+#voltar-ao-topo.show {
     opacity: 0.7;
-}
-#content {
-    height: 2000px;
-}
-
-
-
-
-.h1 {
-    font-size: 5em;
-}
-
-
-.typed-area{
-    margin-bottom: 10px;
-    position: relative;
-    top: 34px;
-}
-
-
-
-
-
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-img.lazy {
-    width: 700px; 
-    height: 467px; 
-    display: block;
-}
-
-
-
-.apresentacao {  
-    bottom: 45px;
-    width: 100%;
-    pointer-events: visibleFill; 
-    position: relative;
-}
-
-
-.conteudo {
-    position: relative;
-    margin: 0 auto;
-    width: 80%;
-    height: 70px;
-   
-    max-width: 1278px;
-    
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-duration:5s;
-    -moz-animation-duration:5s;
-    -ms-animation-duration:5s;
-    -o-animation-duration:5s;
-    animation-duration:5s;  
-}
-
-.conteudo h1{
-    
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-  
-    height: 50px;
-    width: 100%;    
-    margin: 0 0 0 20px;
-    padding:0;
-    
-    
-}
-
-.conteudo h2{
-    
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-   
-    height: 50px;
-    width: 100%;    
-    margin: 0 0 0 20px;
-    padding:0;
-    
-}
-
-.animacao1{
-    position: relative;
-    top: 60px;
-    left: 28%;
-
-
-    text-transform: lowercase;
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    -ms-animation-duration:1s;
-    -o-animation-duration:1s;
-    animation-duration:1s;  
-    
-    -webkit-animation-delay:5s;
-    -moz-animation-delay:5s;
-    -ms-animation-delay:5s;
-    -o-animation-delay:5s;
-    animation-delay:5s;   
-}
-
-
-
-.animacao3{
-    
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-duration:2s;
-    -moz-animation-duration:2s;
-    -ms-animation-duration:2s;
-    -o-animation-duration:2s;
-    animation-duration:2s;
-    -webkit-animation-delay:1s;
-    -moz-animation-delay:1s;
-    -ms-animation-delay:1s;
-    -o-animation-delay:1s;
-    animation-delay:1s;   
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -396,12 +353,7 @@ img.lazy {
     }
 }
 
-.fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
-    -moz-animation-name: fadeInLeft;
-    -o-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-}
+
 @-webkit-keyframes fadeOutLeft {
     0% {
         opacity: 1;
@@ -455,43 +407,6 @@ img.lazy {
     -moz-animation-name: fadeOutLeft;
     -o-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
-}
-
-
-
-/*efeito hr*/
-
-.wrap{
-    width: 100%;
-    margin: 0 auto;
-    /* padding: 50px 0; */
-    position: fixed;
-    height: 55px;
-    background-color:#5c5c5cbd;
-}
-button{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
-}
-hr{
-    margin-top: 20px;
-    
-    border: none;
-    background-color: rgb(255, 255, 255)
-}
-.hr1{
-    margin-left: 0;
-}
-.hr2{
-    margin-right:0;
-}
-
-.trans--grow{
-    -webkit-transition: all 2s ease-in-out; /* For Safari 3.1 to 6.0 */
-    transition: all 0.5s  ease-in-out;
-    
-    width : 0;
 }
 
 .grow{

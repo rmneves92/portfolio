@@ -14,105 +14,17 @@
 }
 
 
+/* Flex */
 
-
-/* .header{
-    background-color: #FFF;
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    top: 20px;
-} */
-
-/* .header nav{
-    margin-top: 23px;
+.flex{
+    display: flex;
 }
 
-
-
-.header a {
-    color: rgb(75, 75, 75);
-    font-size: 1.2em;
-    text-decoration: none;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+.flex-column{
+    flex-direction: column;
 }
 
-.header li{
-    margin-left: 20px;
+.flex-center{
+    justify-content: center;
+    align-items: center; 
 }
-
-
-.header a:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    right: 100%;
-    bottom: 50%;
-    background: lightgrey;
-    height: 1.5px; 
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.header a:hover {
-    opacity: 1 !important;
-    color: lightgrey;
-    transition-duration: 0.5s;
-    
-}
-
-.header a:hover:before {
-    right: 0;
-}
-.header a:before {
-    bottom: -2px;
-}
-
-
-*/
-
-
-/* body{
-    background: url(../images/plano-de-fundo.png);
-} */
-
-
-/** FOOTER **/
-.footer{
-    
-    position: fixed;
-    background-color: rgba(100, 100, 100, 0.6);
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-}
-
-.footer nav{
-    margin-top: 40px;
-}
-
-
-.footer ul{
-    
-    list-style: none;
-}
-
-.footer a {
-    color: #FFF;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-
-/*a:hover{
-    color: #bfdd77;
-    transition: 0.5s; 
-}*/
-
