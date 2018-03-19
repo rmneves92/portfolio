@@ -1,27 +1,26 @@
 body{
     background: black;
     line-height: 26px;
-    font-family: "FiraSans-Regular", "Arial", sans-serif;
+    font-family: "SanFranciscoDisplay-Regular", "Arial", sans-serif;
     font-weight: lighter;
     text-transform: none;
     letter-spacing: 0;
-    color: rgb(65, 65, 65);
+    color: rgb(150, 150, 150);
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;   
 }
 
-#header{
-    background-size: cover;
-    overflow: visible;
-    height: 500px; 
+header{
+    z-index: 9999;
+    width: 100%;
+    position: fixed;  
 }
 
-.efeito-menu{
+.menu-principal{
     width: 100%;
     margin: 0 auto;
-    position: fixed;
-    height: 55px;
-    background-color:#5c5c5cbd;
+    height: 44px;
+    background-color:rgba(0,0,0,0.8);
 }
 
 .trans-grow{
@@ -45,27 +44,26 @@ hr{
 }
 
 .navbar{
+    z-index: 9999;
     width: 100%;
     position: fixed;  
 }
 
 .menu-principal{
     list-style: none;
-    margin-top: 17px;
 }
 
 .menu-principal li a {
     margin: 20px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: bold;
     text-decoration: none;
     position: relative;
     text-transform: uppercase;
-    text-transform: uppercase;
     text-decoration: none;
     word-spacing: 1px;
     transition-duration: 0.8s;
-    color: rgb(168, 168, 168);
+    color: #FFF;
     letter-spacing: 3px;
 }
 
@@ -77,8 +75,9 @@ hr{
 }
 
 .destaque{
-    height: 555px;    
-    background: url(../images/plano-de-fundo2.png) ;
+    height: 750px;
+    background: url(../images/plano-de-fundo6.png);
+    margin-bottom: 20px;
 }
 
 .destaque h1{
@@ -90,7 +89,7 @@ hr{
 }
 
 .apresentacao {  
-    bottom: 45px;
+    
     width: 100%;
     pointer-events: visibleFill; 
     position: relative;
@@ -98,7 +97,7 @@ hr{
 
 
 .texto-apresentacao{
-    color: rgb(255, 255, 255);
+    color: #FFF;
     height: 50px;
     width: 100%;    
     margin: 0 0 0 20px;
@@ -109,7 +108,6 @@ hr{
     position: relative;
     margin: 0 auto;
     width: 80%;
-    height: 70px;
     max-width: 1278px;
     -webkit-animation-fill-mode:both;
     -moz-animation-fill-mode:both;
@@ -121,6 +119,15 @@ hr{
     -ms-animation-duration:5s;
     -o-animation-duration:5s;
     animation-duration:5s;  
+}
+
+#container{
+    background: url(../images/plano-de-fundo.png);
+    height: 1000px;
+}
+
+#container img{
+
 }
 
 .fadeInLeft {
@@ -191,8 +198,9 @@ hr{
     top: 34px;
 }
 
-.typed-container div {
-    height: 2000px;
+.typed-container {
+    position: relative;
+    top: 70px;
 }
 
 .link-seta{
@@ -209,15 +217,15 @@ a{
     text-decoration: none;
 }
 
-#header li+li{
+header li+li{
     margin-left: 20px;
 }
 
-.efeito-underline:before {
+.menu-principal a:before {
     content: "";
     position: absolute;
     width: 100%;
-    height:2px;
+    height:1px;
     bottom: 0;
     left: 0;
     background-color:#33b688;
@@ -228,7 +236,7 @@ a{
     transition: all 0.3s ease-in-out 0s;
 }
 
-.efeito-underline:hover:before {
+.menu-principal a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -258,7 +266,9 @@ a{
     display: none;
     text-transform: uppercase;
     font-size: 5rem;
-    color: #33b688;  
+    color: #33b688; 
+    
+     
 }
 
 hr {

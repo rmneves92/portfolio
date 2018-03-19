@@ -1,6 +1,11 @@
 @font-face {
-    font-family: Hero;
-    src: url('../fonts/hero/Hero.otf');
+    font-family: SanFranciscoDisplay-Regular;
+    src: url('../fonts/SanFranciscoFont-master/SanFranciscoDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: SanFranciscoDisplay-Heavy;
+    src: url('../fonts/SanFranciscoFont-master/SanFranciscoDisplay-Heavy.otf');
 }
 
 @font-face {

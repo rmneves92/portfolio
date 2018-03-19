@@ -1,5 +1,7 @@
 $(function(){
 
+    console.log("Volte em breve ;)")
+
     //funcoes.efeitos.efeitoLazy();
     funcoes.efeitos.efeitoUnderline();
     funcoes.efeitos.efeitoTyped();
@@ -8,6 +10,21 @@ $(function(){
     // Ajustando formato do cursor
     $(".typed-cursor").css("font-size", "100px");
     $(".typed-cursor").css("margin-left", "2px");
+
+
+
+    $('.link-seta').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+                targetOffset = $("#container").offset().top;
+                
+        $('html, body').animate({ 
+            scrollTop: targetOffset
+        }, 600);
+    });
+
+
+
 });
 
 var funcoes = {
