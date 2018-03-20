@@ -5,31 +5,36 @@
     <title>Portfolio | Rafael Neves</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="src/css/portifolio.css">
+    <link rel="stylesheet" type="text/css" href="src/css/geral.css">
     <link rel="stylesheet" type="text/css" href="src/css/header.css">
+    <link rel="stylesheet" type="text/css" href="src/css/destaque.css">
+    <link rel="stylesheet" type="text/css" href="src/css/sobre.css">
+    <link rel="stylesheet" type="text/css" href="src/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/lightbox2-master/src/css/lightbox.css">
 </head>
 <body>
     
     <!-- Início do Cabeçalho  -->
-    <header>
-       <!--  <div class="efeito-menu">
+    <header id="header">
+        <!--  <div class="efeito-menu">
             <hr class="trans-grow hr1">
             <hr class="trans-grow hr2">
         </div> -->
         <nav>
-            <ul class="menu-principal flex flex-center">
-                <li><a href="#">Home</a></li> 
+            <ul class="menu-principal flex-container flex-center">
+                <li><a id="link-home" href="#">Home</a></li> 
                 <li><a href="#">Sobre</a></li> 
-                <li><a href="#">Portfolio</a></li>
+                <li><a id="link-portfolio" href="#">Portfolio</a></li>
                 <li><a href="#">Jobs</a></li> 
                 <li><a href="#">Contato</a></li>   
                 <!-- <li><a href="#">Teste</a></li>   --> 
             </ul>
         </nav>
     </header>
-    <main role="main">
-
-        <div class="destaque flex flex-column flex-center">
+    <!-- Fim do Cabeçalho  -->
+    <main id="main" role="main">
+        
+        <div class="destaque flex-container flex-column flex-center">
             <div class="apresentacao">
                 <div class="conteudo">
                     <h1 class="texto-apresentacao animacao3 fadeInLeft">Olá!</h1>
@@ -39,29 +44,47 @@
             <div class="typed-container">
                 <span class="titulo-principal"></span>
                 <div id="typed-conteudo">
-                    <p>Desenvolvedor Fron-end</p>
+                    <p>Desenvolvedor Front-end</p>
+                    
                 </div>
             </div>
             <p class="animacao1 fadeInLeft">seja bem-vindo...</p>
-            <a class="link-seta" href="#container" class="flex flex-column flex-center">
+            <a class="link-seta" href="#container" class="flex-container flex-column flex-center">
                 <i class="seta-baixo"></i>
             </a>
         </div>
         
-        <div id="container">
-           <div class="html"></div>
-
-
-        </div>
+        <section id="portfolio">
+            <div class="flex-container lista-projetos">
+                <div class="container-projeto">
+                    <a href="src/images/imagem1.jpg" data-lightbox="image-1" data-title="My caption">
+                        <img src="src/images/imagem1.jpg">
+                        <div class="desc-imagem-wrap"><p class="desc-imagem">Portal Marisa</p></div>
+                    </a>
+                    <a href="src/images/logo.png" data-lightbox="image-1" data-title="My caption"></a>
+                </div>
+                <div class="container-projeto"></div>
+                <div class="container-projeto">Javascript</div>
+                <div class="container-projeto">Sass</div>
+                <div class="container-projeto">React.js</div>
+                <div class="container-projeto">GIT</div>
+            </div>
+        </section>
     </main> 
-<!-- Fim do Cabeçalho  -->
-
-
-<a href="#" id="voltar-ao-topo" title="Voltar ao topo">&uarr;</a>
+    
+    
+    
+    
+    
+    <a href="#" id="voltar-ao-topo" title="Voltar ao topo">&uarr;</a>
 </body>
 
 <script type="text/javascript" src="src/js/jquery-3.3.1.js" charset="utf-8"></script>
 <script type="text/javascript" src="src/js/main.js" charset="utf-8"></script>
-<script type="text/javascript" src="typed.js-master/lib/typed.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="src/plugins/typed.js-master/lib/typed.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="src/plugins/lightbox2-master/src/js/lightbox.js" charset="utf-8"></script>
 <!--script type="text/javascript" src="jquery.lazy-master/jquery.lazy.min.js" charset="utf-8"></script-->
+
+
+
 </html>

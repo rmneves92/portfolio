@@ -1,8 +1,7 @@
 $(function(){
 
-    console.log("Volte em breve ;)")
-
     //funcoes.efeitos.efeitoLazy();
+    funcoes.efeitos.efeitoLightbox();
     funcoes.efeitos.efeitoUnderline();
     funcoes.efeitos.efeitoTyped();
     funcoes.eventos.voltarAoTopo();
@@ -12,16 +11,13 @@ $(function(){
     $(".typed-cursor").css("margin-left", "2px");
 
 
+    funcoes.eventos.slidePage(".link-seta", "#portfolio");
+    funcoes.eventos.slidePage("#link-portfolio", "#portfolio");
+    funcoes.eventos.slidePage("#link-home", "body")
 
-    $('.link-seta').on('click', function(e) {
-        e.preventDefault();
-        var id = $(this).attr('href'),
-                targetOffset = $("#container").offset().top;
-                
-        $('html, body').animate({ 
-            scrollTop: targetOffset
-        }, 600);
-    });
+    
+
+    
 
 
 
@@ -76,7 +72,14 @@ var funcoes = {
             setTimeout(function() {
                 $("p.animacao1").addClass("fadeOutLeft"); 
             },7000);
-        }    
+        },
+        
+        efeitoLightbox: function(){
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true
+            });
+        }
     },
     eventos: {
         // Botão é adicionado ao interagir com o scroll
@@ -102,6 +105,18 @@ var funcoes = {
                     }, 700);
                 });
             }
+        },
+        slidePage: function(a, b){
+            $(a).on('click', function(e) {
+                e.preventDefault();
+                var id = $(this).attr('href'),
+                        targetOffset = $(b).offset().top - 44;
+                        
+                $('html, body').animate({ 
+                    scrollTop: targetOffset
+                }, 600);
+            });
+          
         }
     }
 }

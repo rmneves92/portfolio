@@ -1,0 +1,70 @@
+#portfolio{
+    height: 2000px;
+    background: url(../images/plano-de-fundo.png);
+}
+
+.lista-projetos{
+    justify-content: space-around;
+    flex-flow: row wrap;
+    height: 500px;
+}
+
+.container-projeto{
+    height: 300px;
+    background: rgb(236, 238, 240);
+    width: 30%;
+    max-width: 500px;
+    min-width: 500px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 2%;
+    box-shadow: 0px 30px 40px -25px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+    
+    position: relative;
+    
+}
+
+.lista-projetos img{
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.4s ease-out;
+}
+
+.titulo-galeria{
+    
+    margin: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    background: black;
+}
+
+.desc-imagem-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #33b68898;
+    color: #ffffff;;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+}
+
+.container-projeto:hover .desc-imagem-wrap {
+    visibility: visible;
+    opacity: 1;
+}
+
+.desc-imagem {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.container-projeto:hover .desc-imagem {
+    transform: translateY(0);
+}
