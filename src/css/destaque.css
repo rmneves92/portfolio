@@ -13,7 +13,7 @@
 }
 
 .apresentacao {  
-    
+    margin-bottom: 50px;
     width: 100%;
     pointer-events: visibleFill; 
     position: relative;
@@ -61,7 +61,7 @@
 .animacao1{
     font-size: 2rem;
     position: relative;
-    top: 60px;
+    /* top: 60px; */
     left: 28%;
     
     text-transform: lowercase;

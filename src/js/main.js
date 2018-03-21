@@ -1,5 +1,10 @@
 $(function(){
+    
+    $("html").animate({scrollTop:0}, 600);
+    
 
+    funcoes.efeitos.preloader();
+    
     //funcoes.efeitos.efeitoLazy();
     funcoes.efeitos.efeitoLightbox();
     funcoes.efeitos.efeitoUnderline();
@@ -16,10 +21,6 @@ $(function(){
     funcoes.eventos.slidePage("#link-home", "body")
 
     
-
-    
-
-
 
 });
 
@@ -77,7 +78,17 @@ var funcoes = {
         efeitoLightbox: function(){
             lightbox.option({
                 'resizeDuration': 200,
-                'wrapAround': true
+                'wrapAround': true,
+                'alwaysShowNavOnTouchDevices': true,
+                'maxWidth': 1500,
+                'positionFromTop': 100
+
+            });
+        },
+
+        preloader: function(){
+            $(window).on("load",function (){
+                $("#preloader").fadeOut(500);
             });
         }
     },
@@ -106,11 +117,11 @@ var funcoes = {
                 });
             }
         },
-        slidePage: function(a, b){
-            $(a).on('click', function(e) {
+        slidePage: function(element, target){
+            $(element).on('click', function(e) {
                 e.preventDefault();
                 var id = $(this).attr('href'),
-                        targetOffset = $(b).offset().top - 44;
+                        targetOffset = $(target).offset().top - 44;
                         
                 $('html, body').animate({ 
                     scrollTop: targetOffset

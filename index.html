@@ -2,6 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+   <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116125535-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116125535-1');
+    </script> -->
+
     <title>Portfolio | Rafael Neves</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
@@ -14,7 +24,7 @@
 </head>
 <body>
     
-    <!-- Início do Cabeçalho  -->
+    <!-- HEADER  -->
     <header id="header">
         <!--  <div class="efeito-menu">
             <hr class="trans-grow hr1">
@@ -31,9 +41,11 @@
             </ul>
         </nav>
     </header>
-    <!-- Fim do Cabeçalho  -->
+    
+    <!-- MAIN -->
     <main id="main" role="main">
         
+        <!-- DESTAQUE -->
         <div class="destaque flex-container flex-column flex-center">
             <div class="apresentacao">
                 <div class="conteudo">
@@ -41,11 +53,10 @@
                     <h2 class="texto-apresentacao animacao2 fadeInLeft">Meu nome é Rafael Neves</h2> 
                 </div>
             </div>
-            <div class="typed-container">
+            <div lclass="typed-container">
                 <span class="titulo-principal"></span>
                 <div id="typed-conteudo">
                     <p>Desenvolvedor Front-end</p>
-                    
                 </div>
             </div>
             <p class="animacao1 fadeInLeft">seja bem-vindo...</p>
@@ -54,20 +65,53 @@
             </a>
         </div>
         
+        <!-- PORTFOLIO -->
         <section id="portfolio">
             <div class="flex-container lista-projetos">
                 <div class="container-projeto">
-                    <a href="src/images/imagem1.jpg" data-lightbox="image-1" data-title="My caption">
-                        <img src="src/images/imagem1.jpg">
-                        <div class="desc-imagem-wrap"><p class="desc-imagem">Portal Marisa</p></div>
+                    <a href="src/images/projetos/teleperformance_5.jpg" data-lightbox="galeria-1" data-title="">
+                        <img src="src/images/projetos/teleperformance_1.jpg">
+                        <div class="desc-imagem-wrap"><p class="desc-imagem">Teleperformance</p></div>
                     </a>
-                    <a href="src/images/logo.png" data-lightbox="image-1" data-title="My caption"></a>
+                    <a href="src/images/projetos/teleperformance_2.jpg" data-lightbox="galeria-1" data-title=""></a>
+                    <a href="src/images/projetos/teleperformance_3.jpg" data-lightbox="galeria-1" data-title=""></a>
+                    <a href="src/images/projetos/teleperformance_4.jpg" data-lightbox="galeria-1" data-title=""></a>
+                    <a href="src/images/projetos/teleperformance_1.jpg" data-lightbox="galeria-1" data-title=""></a>
+                </div>
+                <div class="container-projeto">
+                    <a href="src/images/projetos/marisa_1.jpg" data-lightbox="galeria-2" data-title="">
+                        <img src="src/images/projetos/marisa_1.jpg">
+                        <div class="desc-imagem-wrap"><p class="desc-imagem">Marisa</p></div>
+                    </a>
+                    <a href="src/images/projetos/marisa_2.jpg" data-lightbox="galeria-2" data-title=""></a>
+                </div>
+                <div class="container-projeto">
+                    <a href="src/images/projetos/glfoods_3.jpg" data-lightbox="galeria-3" data-title="">
+                        <img src="src/images/projetos/glfoods_3.jpg">
+                        <div class="desc-imagem-wrap"><p class="desc-imagem">GL Foods</p></div>
+                    </a>
+                    <a href="src/images/projetos/glfoods_2.jpg" data-lightbox="galeria-3" data-title=""></a>
+                    <a href="src/images/projetos/glfoods_1.jpg" data-lightbox="galeria-3" data-title=""></a>
+                    <a href="src/images/projetos/glfoods_4.jpg" data-lightbox="galeria-3" data-title=""></a>
+                    <a href="src/images/projetos/glfoods_5.jpg" data-lightbox="galeria-3" data-title=""></a>
+                </div>
+                <div class="container-projeto">
+                    <a href="src/images/projetos/montana_1.png" data-lightbox="galeria-4" data-title="">
+                        <img src="src/images/projetos/montana_1.png">
+                        <div class="desc-imagem-wrap"><p class="desc-imagem">Montana Química</p></div>
+                    </a>
+                    <a href="src/images/projetos/montana_2.png" data-lightbox="galeria-4" data-title=""></a>
+                    <a href="src/images/projetos/montana_1.png" data-lightbox="galeria-4" data-title=""></a>
+                </div>
+                <div class="container-projeto">
+                    <a href="src/images/projetos/metalfrio_3.png" data-lightbox="galeria-5" data-title="">
+                        <img src="src/images/projetos/metalfrio_3.png">
+                        <div class="desc-imagem-wrap"><p class="desc-imagem">Metalfrio</p></div>
+                    </a>
+                    <a href="src/images/projetos/metalfrio_2.png" data-lightbox="galeria-5" data-title=""></a>
+                    <a href="src/images/projetos/metalfrio_1.png" data-lightbox="galeria-5" data-title=""></a>
                 </div>
                 <div class="container-projeto"></div>
-                <div class="container-projeto">Javascript</div>
-                <div class="container-projeto">Sass</div>
-                <div class="container-projeto">React.js</div>
-                <div class="container-projeto">GIT</div>
             </div>
         </section>
     </main> 
@@ -76,7 +120,16 @@
     
     
     
+    <!-- VOLTAR AO TOPO -->
     <a href="#" id="voltar-ao-topo" title="Voltar ao topo">&uarr;</a>
+    
+
+    <!-- PRE LOADER -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
 </body>
 
 <script type="text/javascript" src="src/js/jquery-3.3.1.js" charset="utf-8"></script>

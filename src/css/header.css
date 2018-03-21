@@ -38,6 +38,7 @@ hr{
 }
 
 .menu-principal{
+    border-top: 4px solid #33b688;
     list-style: none;
 }
 
