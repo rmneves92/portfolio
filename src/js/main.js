@@ -1,13 +1,11 @@
 $(function(){
+    //$("html").animate({scrollTop:0}, 600);
     
-    $("html").animate({scrollTop:0}, 600);
-    
-
     funcoes.efeitos.preloader();
     
-    //funcoes.efeitos.efeitoLazy();
+    funcoes.efeitos.efeitoLazy();
     funcoes.efeitos.efeitoLightbox();
-    funcoes.efeitos.efeitoUnderline();
+    /* funcoes.efeitos.efeitoHr(); */
     funcoes.efeitos.efeitoTyped();
     funcoes.eventos.voltarAoTopo();
     
@@ -28,18 +26,21 @@ var funcoes = {
     efeitos: {
         // Fade in ao interagir com o scroll
         efeitoLazy: function(){
-            $('.lazy').lazy({
-                effect: "fadeIn",
-                effectTime: 5000,
-                threshold: 0
+            $('.lazy').Lazy({
+                scrollDirection: 'vertical',
+                effect: 'fadeIn',
+                visibleOnly: true,
+                onError: function(element) {
+                    console.log('error loading ' + element.data('src'));
+                }
             });
         },
         
         // Adiciona efeito no menu ao passar o mouse
-        efeitoUnderline: function(){
+        efeitoHr: function(){
             var toggle = false,
             hrs = $('.trans-grow');
-            $('.navbar').hover(function(){
+            //$('.navbar').hover(function(){
                 $.map(hrs, function(val, i){
                     if(toggle === false){
                         $(val)
@@ -49,9 +50,9 @@ var funcoes = {
                         $(val).removeClass('grow')
                         .removeClass('line-color-change');
                     }
-                });
+                }); 
                 toggle = !toggle;
-            });
+            //});
         },
         
         // Efeito de digitação automática
@@ -90,7 +91,7 @@ var funcoes = {
             $(window).on("load",function (){
                 $("#preloader").fadeOut(500);
             });
-        }
+        },
     },
     eventos: {
         // Botão é adicionado ao interagir com o scroll

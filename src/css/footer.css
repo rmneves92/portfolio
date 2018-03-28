@@ -1,0 +1,28 @@
+#footer{
+    position: relative;
+    clear: both;
+    background-color: #3c3d41;
+    flex: 0 0 auto;
+
+
+
+
+
+}
+
+#footer-copyright{
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    
+}
+
+#footer-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    justify-content: space-around;
+}

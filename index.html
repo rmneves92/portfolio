@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="src/css/destaque.css">
     <link rel="stylesheet" type="text/css" href="src/css/sobre.css">
     <link rel="stylesheet" type="text/css" href="src/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="src/css/footer.css">
     <link rel="stylesheet" type="text/css" href="src/plugins/lightbox2-master/src/css/lightbox.css">
 </head>
 <body>
@@ -27,8 +28,8 @@
     <!-- HEADER  -->
     <header id="header">
         <!--  <div class="efeito-menu">
-            <hr class="trans-grow hr1">
-            <hr class="trans-grow hr2">
+            <hr class="custom-hr trans-grow hr1">
+            <hr class="custom-hr trans-grow hr2">
         </div> -->
         <nav>
             <ul class="menu-principal flex-container flex-center">
@@ -46,14 +47,16 @@
     <main id="main" role="main">
         
         <!-- DESTAQUE -->
-        <div class="destaque flex-container flex-column flex-center">
+        <section id="destaque" class="flex-container flex-column flex-center">
             <div class="apresentacao">
                 <div class="conteudo">
                     <h1 class="texto-apresentacao animacao3 fadeInLeft">Olá!</h1>
                     <h2 class="texto-apresentacao animacao2 fadeInLeft">Meu nome é Rafael Neves</h2> 
                 </div>
+
+               
             </div>
-            <div lclass="typed-container">
+            <div class="typed-container">
                 <span class="titulo-principal"></span>
                 <div id="typed-conteudo">
                     <p>Desenvolvedor Front-end</p>
@@ -63,12 +66,18 @@
             <a class="link-seta" href="#container" class="flex-container flex-column flex-center">
                 <i class="seta-baixo"></i>
             </a>
-        </div>
-        
+        </section>
+
+
+
         <!-- PORTFOLIO -->
         <section id="portfolio">
+
+            
+            
             <div class="flex-container lista-projetos">
                 <div class="container-projeto">
+                    
                     <a href="src/images/projetos/teleperformance_5.jpg" data-lightbox="galeria-1" data-title="">
                         <img src="src/images/projetos/teleperformance_1.jpg">
                         <div class="desc-imagem-wrap"><p class="desc-imagem">Teleperformance</p></div>
@@ -116,6 +125,21 @@
         </section>
     </main> 
     
+
+    <footer id="footer">
+        <div id="footer-container" class="flex-container">
+            <p>Item 1</p>
+            <p>Item 2</p>
+            <p>Item 3</p>
+            <p>Item 4</p>
+            <p>Item 5</p>
+        </div>
+        <div id="footer-copyright">
+            <p>© 2018 Copyright Text </p>
+        </div>
+    </footer>
+    
+
     
     
     
@@ -136,7 +160,7 @@
 <script type="text/javascript" src="src/js/main.js" charset="utf-8"></script>
 <script type="text/javascript" src="src/plugins/typed.js-master/lib/typed.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="src/plugins/lightbox2-master/src/js/lightbox.js" charset="utf-8"></script>
-<!--script type="text/javascript" src="jquery.lazy-master/jquery.lazy.min.js" charset="utf-8"></script-->
+<script type="text/javascript" src="src/plugins/jquery.lazy-master/jquery.lazy.min.js" charset="utf-8"></script>
 
 
 

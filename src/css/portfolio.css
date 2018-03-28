@@ -1,12 +1,13 @@
 #portfolio{
-    height: 2000px;
-    background: url(../images/plano-de-fundo.png);
+    /* height: 650px;
+    background: url(../images/plano-de-fundo.png); */
 }
 
 .lista-projetos{
+    background: url(../images/plano-de-fundo.png);
     justify-content: space-around;
     flex-flow: row wrap;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .container-projeto{
@@ -45,7 +46,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #33b68898;
+    background: #53dbb29d;
     color: #ffffff;;
     visibility: hidden;
     opacity: 0;
@@ -61,6 +62,9 @@
 }
 
 .desc-imagem {
+    text-shadow: 0px 2px 3px #555;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     transition: .2s;
     transform: translateY(1em);
 }

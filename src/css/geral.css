@@ -35,7 +35,7 @@
 }
 
 body{
-    background: black;
+    /* background: black; */
     line-height: 26px;
     font-family: "SanFranciscoDisplay-Regular", "Arial", sans-serif;
     font-weight: lighter;
@@ -75,13 +75,6 @@ body{
 }
 
 
-hr {
-    border: none;
-    height: 2px;
-    color: #fff;
-    background-color: #fff;
-}
-
 a{
     text-decoration: none;
 }
@@ -113,7 +106,7 @@ a{
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: rgb(138, 185, 178);
+    border-top-color: #63b658;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
@@ -127,7 +120,7 @@ a{
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: rgb(28, 201, 186);
+    border-top-color: #eeff00;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
   }
@@ -141,7 +134,7 @@ a{
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: rgb(0, 255, 221);
+    border-top-color: #df572d;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
   }
@@ -166,3 +159,12 @@ a{
       transform: rotate(360deg);
     }
   }
+
+  .container-wrap{
+      padding: 40px;
+  }
+
+  .hideme{
+
+    opacity:0;
+}

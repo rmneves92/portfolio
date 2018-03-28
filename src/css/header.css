@@ -13,18 +13,19 @@ header{
 
 .trans-grow{
     -webkit-transition: all 2s ease-in-out; /* For Safari 3.1 to 6.0 */
-    transition: all 0.5s  ease-in-out;
+    transition: all 2s  ease-in-out;
     width : 0;
 }
 
-hr{
+.custom-hr{
     margin-top: 20px;
     border: none;
-    background-color: rgb(255, 255, 255)
+    background-color: #FFF;
 }
 
 .hr1{
     margin-left: 0;
+    
 }
 
 .hr2{
@@ -38,7 +39,7 @@ hr{
 }
 
 .menu-principal{
-    border-top: 4px solid #33b688;
+    border-top: 4px solid #53dbb3;
     list-style: none;
 }
 
@@ -58,7 +59,7 @@ hr{
 
 .menu-principal a:hover {
     opacity: 1 !important;
-    color: #33b688;
+    color: #53dbb3;
     transition-duration: 0.8s;
     
 }
@@ -75,7 +76,7 @@ header li+li{
     height:1px;
     bottom: 0;
     left: 0;
-    background-color:#33b688;
+    background-color:#53dbb3;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -100,7 +101,7 @@ header li+li{
     display: none;
     text-transform: uppercase;
     font-size: 5rem;
-    color: #33b688;
+    color: #53dbb3;
 }
 
 .grow{
@@ -108,6 +109,6 @@ header li+li{
 }
 
 .line-color-change{
-    background-color: #33b688;
+    background-color: #53dbb3;;
 }
 

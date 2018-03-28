@@ -1,14 +1,14 @@
-.destaque{
+#destaque{
     height: 750px;
     background: url(../images/plano-de-fundo6.png);
     margin-bottom: 20px;
 }
 
-.destaque h1{
+#destaque h1{
     font-size: 50px;
 }
 
-.destaque h2{  
+#destaque h2{  
     font-size: 20px;
 }
 
@@ -61,7 +61,7 @@
 .animacao1{
     font-size: 2rem;
     position: relative;
-    /* top: 60px; */
+    top: 60px;
     left: 28%;
     
     text-transform: lowercase;
@@ -237,8 +237,8 @@
     display: inline-block;
     width: 3em;
     height: 3em;
-    border-right: 3px solid #33b688;
-    border-bottom: 3px solid #33b688;
+    border-right: 3px solid #53dbb3;
+    border-bottom: 3px solid #53dbb3;
     transform: rotate(45deg);
     cursor: pointer;
     transition: 0.8s;
