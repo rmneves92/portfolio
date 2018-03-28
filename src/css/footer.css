@@ -3,26 +3,88 @@
     clear: both;
     background-color: #3c3d41;
     flex: 0 0 auto;
-
-
-
-
-
+    color: #FFF;
+    text-transform: uppercase;
+    /* border-bottom: 4px solid #53dbb3; */
 }
+
+#footer-container{
+    border-top: 4px solid #53dbb3;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.logo{
+    border: 3px solid #FFF; 
+    padding: 10px;
+    text-shadow: 5px 5px 2px #1f1f1f
+}
+
+#footer-container ul{
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+#footer-container h5{
+    margin-bottom: 0px;
+    font-size: 1.0em;
+}
+
+#footer li{
+    font-size: .8em;
+    font-weight: lighter;
+    word-spacing: 1px;
+    cursor: pointer;
+}
+
+#footer li:hover{
+    font-weight: bold;
+}
+
+.lista-links{
+    position: relative;
+    top: 25px;
+}
+
+.lista-links li + li{
+    margin-left: 10px;
+}
+
+
+.lista-links img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    filter: drop-shadow(5px 5px 2px #1f1f1f);
+}
+
+
+/* ICONES MEDIAS SOCIAIS */
+
+.github{
+    background: url("../images/icons/icone-github.svg") no-repeat left;
+}
+
+.linkedin{
+    background: url("../images/icons/icone-linkedin.svg") no-repeat;
+}
+
+.email{
+    background: url("../images/icons/icone-email.svg") no-repeat;
+}
+
+.telefone{
+    background: url("../images/icons/icone-telefone.svg") no-repeat left;
+}
+
+
 
 #footer-copyright{
     background-color: #333333;
     padding-top: 3px;
     padding-bottom: 3px;
     text-align: center;
-    
-}
-
-#footer-container{
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-    justify-content: space-around;
+    font-size: 0.8rem;
 }
