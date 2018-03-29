@@ -1,0 +1,32 @@
+#container-sobre{
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    
+    
+}
+
+#sobre{
+    background: #FFF;
+}
+
+#sobre:not(#container-sobre){
+    
+    -webkit-filter: grayscale(1);
+    filter: grayscale(.5);
+}
+
+.texto-destaque{
+    color: #53dbb3;
+    font-size: 101%;
+    font-weight: bold;
+}
+
+
+#countup p {
+    display: inline-block;
+    padding: 5px;
+    background: #FFA500;
+    margin: 0 0 20px;
+  }

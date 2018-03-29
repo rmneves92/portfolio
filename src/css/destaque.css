@@ -1,7 +1,7 @@
 #destaque{
-    height: 750px;
-    background: url(../images/plano-de-fundo6.png);
-    margin-bottom: 20px;
+    height: 930px;
+    background: url(../images/plano-de-fundo6.png) no-repeat left;
+    border-bottom: 4px solid #53dbb3;
 }
 
 #destaque h1{

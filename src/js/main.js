@@ -1,5 +1,61 @@
 $(function(){
     //$("html").animate({scrollTop:0}, 600);
+
+
+
+    var today = new Date();
+
+var BigDay = new Date("October 3, 2016");
+var msPerDay = 24 * 60 * 60 * 1000;
+var timeLeft = (today.getTime() - BigDay.getTime()  );
+var e_daysLeft = timeLeft / msPerDay;
+var daysLeft = Math.floor(e_daysLeft);
+var yearsLeft = 0;
+var mounthLeft = 0;
+
+
+var sAno = "";
+var sDia = "";
+if (daysLeft > 365) {
+  yearsLeft = Math.floor(daysLeft / 365);
+  daysLeft = daysLeft % 365;
+}
+
+console.log(daysLeft)
+
+if(daysLeft > 31){
+    mounthLeft = Math.floor(daysLeft / 30);
+    daysLeft = (daysLeft % 30);
+}
+
+if(yearsLeft <= "1"){
+    sAno = " ano";
+}
+else{
+    sAno = " anos"
+}
+
+
+if(mounthLeft <= "1"){
+    sMes = " mes";
+}
+else{
+    sMes = " meses"
+}
+
+if(daysLeft <= "1"){
+    sDia = " dia";
+}
+else{
+    sDia = " dias"
+}
+
+ 
+$("#timer").html(yearsLeft +  sAno + ", " + mounthLeft + sMes + " e " + daysLeft + sDia);
+
+
+
+
     
     funcoes.efeitos.preloader();
     
