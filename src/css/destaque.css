@@ -1,8 +1,8 @@
 #destaque{
     height: 930px;
-    /* background: url(../images/plano-de-fundo6.png); */
-    background: url(../images/sobre.jpg);
-    /* Full height */
+    background: url(../images/plano-de-fundo6.png);
+   /*  background: url(../images/sobre.jpg);
+    */ /* Full height */
    
 
     /* Create the parallax scrolling effect */

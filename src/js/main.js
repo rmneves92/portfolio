@@ -1,6 +1,9 @@
 $(function(){
    $("html").animate({scrollTop:0}, 600);
-    
+   AOS.init({
+    duration: 1200,
+  })
+  
 
   
     
@@ -131,7 +134,7 @@ var funcoes = {
                         nav.find('a').parent().removeClass('active');
                         sections.removeClass('active');
                         
-                        $(this).parent().addClass('active');
+                        
                         nav.find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
                     }
                 });
@@ -233,7 +236,7 @@ var funcoes = {
            
                 e.preventDefault();
                 var id = $(this).attr('href'),
-                targetOffset = $(target).offset().top ;
+                targetOffset = $(target).offset().top -44 ;
                 
                 $('html, body').animate({ 
                     scrollTop: targetOffset
