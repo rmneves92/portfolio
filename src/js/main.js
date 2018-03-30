@@ -1,81 +1,45 @@
 $(function(){
-    //$("html").animate({scrollTop:0}, 600);
-
-
-
-    var today = new Date();
-
-var BigDay = new Date("October 3, 2016");
-var msPerDay = 24 * 60 * 60 * 1000;
-var timeLeft = (today.getTime() - BigDay.getTime()  );
-var e_daysLeft = timeLeft / msPerDay;
-var daysLeft = Math.floor(e_daysLeft);
-var yearsLeft = 0;
-var mounthLeft = 0;
-
-
-var sAno = "";
-var sDia = "";
-if (daysLeft > 365) {
-  yearsLeft = Math.floor(daysLeft / 365);
-  daysLeft = daysLeft % 365;
-}
-
-console.log(daysLeft)
-
-if(daysLeft > 31){
-    mounthLeft = Math.floor(daysLeft / 30);
-    daysLeft = (daysLeft % 30);
-}
-
-if(yearsLeft <= "1"){
-    sAno = " ano";
-}
-else{
-    sAno = " anos"
-}
-
-
-if(mounthLeft <= "1"){
-    sMes = " mes";
-}
-else{
-    sMes = " meses"
-}
-
-if(daysLeft <= "1"){
-    sDia = " dia";
-}
-else{
-    sDia = " dias"
-}
-
- 
-$("#timer").html(yearsLeft +  sAno + ", " + mounthLeft + sMes + " e " + daysLeft + sDia);
-
-
-
-
+   $("html").animate({scrollTop:0}, 600);
     
+
+  
+    
+   /*  $(".link").click(function () {
+        var nav = $('nav')
+            , nav_height = nav.outerHeight();
+        $(".link").parent().removeClass('active');
+        $(this).parent().addClass('active');
+        var active_section = $(this).attr('href'); //get active section id
+        $('html, body').animate({
+            //and scroll to the section
+            scrollTop: $(active_section).offset().top - nav_height
+            }, 1000);
+          }); */
+    
+    
+    
+    
+    funcoes.eventos.trocarCorMenu();
+    funcoes.eventos.timer();
     funcoes.efeitos.preloader();
     
     funcoes.efeitos.efeitoLazy();
     funcoes.efeitos.efeitoLightbox();
-    /* funcoes.efeitos.efeitoHr(); */
+    funcoes.efeitos.efeitoHr();
     funcoes.efeitos.efeitoTyped();
     funcoes.eventos.voltarAoTopo();
     
     // Ajustando formato do cursor
     $(".typed-cursor").css("font-size", "100px");
     $(".typed-cursor").css("margin-left", "2px");
-
-
-    funcoes.eventos.slidePage(".link-seta", "#portfolio");
-    funcoes.eventos.slidePage("#link-portfolio", "#portfolio");
-    funcoes.eventos.slidePage("#link-home", "body")
-
     
-
+    
+      funcoes.eventos.slidePage(".link-seta", "#sobre");
+  /* funcoes.eventos.slidePage("#link-portfolio", "#portfolio");
+    funcoes.eventos.slidePage("#link-home", "#destaque");
+    funcoes.eventos.slidePage("#link-sobre", "#sobre"); */
+    
+    
 });
 
 var funcoes = {
@@ -97,17 +61,17 @@ var funcoes = {
             var toggle = false,
             hrs = $('.trans-grow');
             //$('.navbar').hover(function(){
-                $.map(hrs, function(val, i){
-                    if(toggle === false){
-                        $(val)
-                        .addClass('grow')
-                        .addClass('line-color-change'); 
-                    }else{
-                        $(val).removeClass('grow')
-                        .removeClass('line-color-change');
-                    }
-                }); 
-                toggle = !toggle;
+            $.map(hrs, function(val, i){
+                if(toggle === false){
+                    $(val)
+                    .addClass('grow')
+                    .addClass('line-color-change'); 
+                }else{
+                    $(val).removeClass('grow')
+                    .removeClass('line-color-change');
+                }
+            }); 
+            toggle = !toggle;
             //});
         },
         
@@ -125,7 +89,7 @@ var funcoes = {
             
             // Ajuste no tempo até o título principal ser exibido
             $(".titulo-principal").fadeIn(2000);
-
+            
             // Ajuste no tempo até que a mensagem desapareça 
             setTimeout(function() {
                 $("p.animacao1").addClass("fadeOutLeft"); 
@@ -139,10 +103,10 @@ var funcoes = {
                 'alwaysShowNavOnTouchDevices': true,
                 'maxWidth': 1500,
                 'positionFromTop': 100
-
+                
             });
         },
-
+        
         preloader: function(){
             $(window).on("load",function (){
                 $("#preloader").fadeOut(500);
@@ -150,6 +114,96 @@ var funcoes = {
         },
     },
     eventos: {
+        trocarCorMenu: function(){
+            
+            var sections = $('section, header')
+            , nav = $('nav')
+            , nav_height = nav.outerHeight();
+            
+            $(window).on('scroll', function () {
+                var cur_pos = $(this).scrollTop();
+                
+                sections.each(function() {
+                    var top = $(this).offset().top - nav_height,
+                    bottom = top + $(this).outerHeight();
+                    
+                    if (cur_pos >= top && cur_pos < bottom) {
+                        nav.find('a').parent().removeClass('active');
+                        sections.removeClass('active');
+                        
+                        $(this).parent().addClass('active');
+                        nav.find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
+                    }
+                });
+            });
+            
+            nav.find('a').on('click', function () {
+                var $el = $(this)
+                , id = $el.attr('href');
+                
+                $('html, body').animate({
+                    scrollTop: $(id).offset().top - nav_height
+                }, 500);
+                
+                return false;
+            });
+            
+        },
+        
+        timer: function(){
+            
+            var today = new Date();
+            
+            
+            var BigDay = new Date("October 3, 2016");
+            var msPerDay = 24 * 60 * 60 * 1000;
+            var timeLeft = (today.getTime() - BigDay.getTime()  );
+            var e_daysLeft = timeLeft / msPerDay;
+            var daysLeft = Math.floor(e_daysLeft);
+            var yearsLeft = 0;
+            var mounthLeft = 0;
+            
+            
+            var sAno = "";
+            var sDia = "";
+            if (daysLeft > 365) {
+                yearsLeft = Math.floor(daysLeft / 365);
+                daysLeft = daysLeft % 365;
+            }
+            
+            
+            if(daysLeft > 31){
+                mounthLeft = Math.floor(daysLeft / 30);
+                daysLeft = (daysLeft % 30);
+            }
+            
+            if(yearsLeft <= "1"){
+                sAno = " ano";
+            }
+            else{
+                sAno = " anos"
+            }
+            
+            
+            if(mounthLeft <= "1"){
+                sMes = " mes";
+            }
+            else{
+                sMes = " meses"
+            }
+            
+            if(daysLeft <= "1"){
+                sDia = " dia";
+            }
+            else{
+                sDia = " dias"
+            }
+            
+            
+            $("#timer").html(yearsLeft +  sAno + ", " + mounthLeft + sMes + " e " + daysLeft + sDia);
+            
+        },
+        
         // Botão é adicionado ao interagir com o scroll
         voltarAoTopo: function(){
             if ($('#voltar-ao-topo').length) {
@@ -176,15 +230,16 @@ var funcoes = {
         },
         slidePage: function(element, target){
             $(element).on('click', function(e) {
+           
                 e.preventDefault();
                 var id = $(this).attr('href'),
-                        targetOffset = $(target).offset().top - 44;
-                        
+                targetOffset = $(target).offset().top ;
+                
                 $('html, body').animate({ 
                     scrollTop: targetOffset
                 }, 600);
             });
-          
+            
         }
     }
 }

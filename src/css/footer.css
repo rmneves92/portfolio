@@ -5,11 +5,11 @@
     flex: 0 0 auto;
     color: #FFF;
     text-transform: uppercase;
-    /* border-bottom: 4px solid #53dbb3; */
+    /* border-bottom: 4px solid #00e7b4; */
 }
 
 #footer-container{
-    border-top: 4px solid #53dbb3;
+    border-top: 4px solid #00e7b4;
     padding: 20px;
     margin-right: auto;
     margin-left: auto;

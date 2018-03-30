@@ -1,7 +1,15 @@
 #destaque{
     height: 930px;
-    background: url(../images/plano-de-fundo6.png) no-repeat left;
-    border-bottom: 4px solid #53dbb3;
+    /* background: url(../images/plano-de-fundo6.png); */
+    background: url(../images/sobre.jpg);
+    /* Full height */
+   
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #destaque h1{
@@ -236,8 +244,8 @@
     display: inline-block;
     width: 3em;
     height: 3em;
-    border-right: 3px solid #53dbb3;
-    border-bottom: 3px solid #53dbb3;
+    border-right: 3px solid #00e7b4;
+    border-bottom: 3px solid #00e7b4;
     transform: rotate(45deg);
     cursor: pointer;
     transition: 0.8s;
