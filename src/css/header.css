@@ -64,11 +64,11 @@
     letter-spacing: 3px;
 }
 
-/* .menu-principal a:hover {
+.menu-principal a:hover {
     
-    color: #00e7b4;
-    transition-duration: 0.8s;
-} */
+    color: #c2c1c1;
+    transition-duration: 0.2s;
+}
 
 #header li{
     height: 100%;
