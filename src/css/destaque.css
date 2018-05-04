@@ -1,38 +1,39 @@
-#destaque{
-    height: 930px;
+#destaque {
+    height: 100%;
     background: url(../images/plano-de-fundo6.png);
-   /*  background: url(../images/sobre.jpg);
-    */ /* Full height */
-   
-
+    /*  background: url(../images/sobre.jpg);
+    */
+    /* Full height */
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 4px solid #00e7b4;
+    color: white;
 }
 
-#destaque h1{
-    font-size: 50px;
+#destaque h1 {
+    font-size: 3rem;
 }
 
-#destaque h2{  
-    font-size: 20px;
+#destaque h2 {
+    font-size: 1.5rem;
 }
 
-.apresentacao {  
+.apresentacao {
     margin-bottom: 50px;
     width: 100%;
-    pointer-events: visibleFill; 
+    pointer-events: visibleFill;
     position: relative;
 }
 
-.texto-apresentacao{
+.texto-apresentacao {
     color: #FFF;
     height: 50px;
-    width: 100%;    
+    width: 100%;
     margin: 0 0 0 20px;
-    padding:0;
+    padding: 0;
 }
 
 .conteudo {
@@ -41,20 +42,19 @@
     margin: 0 auto;
     width: 80%;
     max-width: 1278px;
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-duration:5s;
-    -moz-animation-duration:5s;
-    -ms-animation-duration:5s;
-    -o-animation-duration:5s;
-    animation-duration:5s;  
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
-#container{
-    
+#container {
     height: 1000px;
 }
 
@@ -65,62 +65,62 @@
     animation-name: fadeInLeft;
 }
 
-.animacao1{
+.animacao1 {
+    color: #8f8f8f8f;
     font-size: 2rem;
     position: relative;
     top: 60px;
     left: 28%;
-    
     text-transform: lowercase;
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    -ms-animation-duration:1s;
-    -o-animation-duration:1s;
-    animation-duration:1s;  
-    -webkit-animation-delay:5s;
-    -moz-animation-delay:5s;
-    -ms-animation-delay:5s;
-    -o-animation-delay:5s;
-    animation-delay:5s;   
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
 }
 
-.animacao2{
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-duration:2s;
-    -moz-animation-duration:2s;
-    -ms-animation-duration:2s;
-    -o-animation-duration:2s;
-    animation-duration:2s;
-    -webkit-animation-delay:1s;
-    -moz-animation-delay:1s;
-    -ms-animation-delay:1s;
-    -o-animation-delay:1s;
-    animation-delay:1s;   
+.animacao2 {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
-.animacao3{
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-duration:5s;
-    -moz-animation-duration:5s;
-    -ms-animation-duration:5s;
-    -o-animation-duration:5s;
-    animation-duration:5s;  
+.animacao3 {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
-.typed-container{
+.typed-container {
     margin-bottom: 10px;
     position: relative;
     top: 34px;
@@ -131,7 +131,7 @@
     top: 70px;
 }
 
-.link-seta{
+.link-seta {
     position: relative;
     top: 20%;
 }
@@ -140,7 +140,8 @@
     0% {
         opacity: 0;
         -webkit-transform: translateX(-20px);
-    }	100% {
+    }
+    100% {
         opacity: 1;
         -webkit-transform: translateX(0);
     }
@@ -151,7 +152,6 @@
         opacity: 0;
         -moz-transform: translateX(-20px);
     }
-    
     100% {
         opacity: 1;
         -moz-transform: translateX(0);
@@ -163,7 +163,6 @@
         opacity: 0;
         -o-transform: translateX(-20px);
     }
-    
     100% {
         opacity: 1;
         -o-transform: translateX(0);
@@ -175,20 +174,17 @@
         opacity: 0;
         transform: translateX(-20px);
     }
-    
     100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-
 @-webkit-keyframes fadeOutLeft {
     0% {
         opacity: 1;
         -webkit-transform: translateX(0);
     }
-    
     100% {
         opacity: 0;
         -webkit-transform: translateX(-20px);
@@ -200,7 +196,6 @@
         opacity: 1;
         -moz-transform: translateX(0);
     }
-    
     100% {
         opacity: 0;
         -moz-transform: translateX(-20px);
@@ -212,7 +207,6 @@
         opacity: 1;
         -o-transform: translateX(0);
     }
-    
     100% {
         opacity: 0;
         -o-transform: translateX(-20px);
@@ -224,7 +218,6 @@
         opacity: 1;
         transform: translateX(0);
     }
-    
     100% {
         opacity: 0;
         transform: translateX(-20px);
@@ -238,8 +231,7 @@
     animation-name: fadeOutLeft;
 }
 
-
-.seta-baixo{
+.seta-baixo {
     content: "";
     display: inline-block;
     width: 3em;
@@ -250,8 +242,10 @@
     cursor: pointer;
     transition: 0.8s;
     animation: MoveUpDown 1.5s linear infinite;
-    position: relative;
-    opacity: 0.7;  
+    opacity: 0.7;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
 }
 
 @keyframes MoveUpDown {
@@ -263,5 +257,17 @@
     }
     100% {
         bottom: 0;
+    }
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 1024px) {
+    #destaque h1 {
+        font-size: 6rem;
+    }
+    #destaque h2 {
+        font-size: 3rem;
+        margin-top: 3rem;
     }
 }

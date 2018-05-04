@@ -1,44 +1,44 @@
-#header{
+#header {
     z-index: 9999;
     width: 100%;
-    position: fixed;  
+    position: fixed;
 }
 
-.menu-principal{
+.menu-principal {
     width: 100%;
     margin: 0 auto;
     height: 44px;
-    background-color:rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.trans-grow{
-    -webkit-transition: all 2s ease-in-out; /* For Safari 3.1 to 6.0 */
-    transition: all 2s  ease-in-out;
-    width : 0;
+.trans-grow {
+    -webkit-transition: all 2s ease-in-out;
+    /* For Safari 3.1 to 6.0 */
+    transition: all 2s ease-in-out;
+    width: 0;
 }
 
-.custom-hr{
+.custom-hr {
     margin-top: 20px;
     border: none;
     background-color: #FFF;
 }
 
-.hr1{
+.hr1 {
     margin-left: 0;
-    
 }
 
-.hr2{
-    margin-right:0;
+.hr2 {
+    margin-right: 0;
 }
 
-.navbar{
+.navbar {
     z-index: 9999;
     width: 100%;
-    position: fixed;  
+    position: fixed;
 }
 
-.menu-principal{
+.menu-principal {
     border-top: 4px solid #00e7b4;
     list-style: none;
 }
@@ -47,17 +47,11 @@
     line-height: 42px;
     display: inline-block;
     height: 100%;
-    
-    
-    
-    
     margin: 0 30px;
     font-size: 0.7em;
     font-weight: bold;
-    
     position: relative;
     text-transform: uppercase;
-    
     word-spacing: 1px;
     transition-duration: 0.8s;
     color: #FFF;
@@ -65,16 +59,15 @@
 }
 
 .menu-principal a:hover {
-    
     color: #c2c1c1;
     transition-duration: 0.2s;
 }
 
-#header li{
+#header li {
     height: 100%;
 }
 
-#header li+li{
+#header li+li {
     /* margin-left: 20px; */
 }
 
@@ -92,6 +85,7 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 } */
+
 /* 
 .menu-principal a:hover:before {
     visibility: visible;
@@ -99,37 +93,37 @@
     transform: scaleX(1);
 } */
 
-.seta-baixo:hover{  
+.seta-baixo:hover {
     transition: 0.8s;
     opacity: 1;
 }
 
-.titulo-principal{ 
+.titulo-principal {
     display: none;
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 6vw;
     color: #00e7b4;
     font-weight: bold;
     text-shadow: 3px 4px 5px #000;
 }
 
-.grow{
-    width:100%;
+.grow {
+    width: 100%;
 }
 
-.line-color-change{
+.line-color-change {
     background-color: #00e7b550;
 }
-
-
-
-
 
 .active {
     transition-duration: 0.4s;
     background-color: #00e7b4;
 }
 
-.active a{
-    color: #000!important;
+.active a {
+    color: #000 !important;
+}
+
+.typed-cursor {
+    font-size: 6vw !important
 }

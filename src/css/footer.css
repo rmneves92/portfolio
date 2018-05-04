@@ -1,90 +1,103 @@
-#footer{
+#footer {
     position: relative;
     clear: both;
-    background-color: #3c3d41;
+    background-color: #231F20;
     flex: 0 0 auto;
     color: #FFF;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     /* border-bottom: 4px solid #00e7b4; */
 }
 
-#footer-container{
+#footer-container {
     border-top: 4px solid #00e7b4;
-    padding: 20px;
+    /* padding: 20px; */
     margin-right: auto;
     margin-left: auto;
-    
 }
 
-.logo{
-    border: 3px solid #FFF; 
+.logo {
     padding: 10px;
-    text-shadow: 5px 5px 2px #1f1f1f
+    text-shadow: 5px 5px 2px #1f1f1f;
+    width: 8.6em;
+    margin: 20px;
 }
 
-#footer-container ul{
+#footer-container ul {
     margin-top: 0px;
     padding-left: 0px;
 }
 
-#footer-container h5{
+#footer-container h5 {
     margin-bottom: 0px;
     font-size: 1.0em;
 }
 
-#footer li{
+#footer li {
     font-size: .8em;
     font-weight: lighter;
     word-spacing: 1px;
     cursor: pointer;
 }
 
-#footer li:hover{
+#footer li:hover {
     font-weight: bold;
 }
 
-.lista-links{
+.lista-links {
     position: relative;
     top: 25px;
 }
 
-.lista-links li + li{
+.lista-links li+li {
     margin-left: 10px;
 }
 
-
-.lista-links img{
+.lista-links img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
     filter: drop-shadow(5px 5px 2px #1f1f1f);
 }
 
-
 /* ICONES MEDIAS SOCIAIS */
 
-.github{
+.github {
     background: url("../images/icons/icone-github.svg") no-repeat left;
 }
 
-.linkedin{
+.linkedin {
     background: url("../images/icons/icone-linkedin.svg") no-repeat;
 }
 
-.email{
+.email {
     background: url("../images/icons/icone-email.svg") no-repeat;
 }
 
-.telefone{
+.telefone {
     background: url("../images/icons/icone-telefone.svg") no-repeat left;
 }
 
-
-
-#footer-copyright{
+#footer-copyright {
     background-color: #333333;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    text-align: center;
-    font-size: 0.8rem;
+    color: #8f8f8f;
+    font-size: 12px;
+}
+
+blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+    color: #8f8f8f;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    color: #8f8f8f;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
 }

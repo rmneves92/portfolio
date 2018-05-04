@@ -1,27 +1,23 @@
-#container-sobre{
+#container-sobre {
     max-width: 800px;
     margin: 0 auto;
     color: black;
     text-align: center;
-    
-    
 }
 
-#container-sobre span{
+#container-sobre span {
     color: #00e7b4;
     font-size: 101%;
     font-weight: bold;
 }
 
-#sobre{
+#sobre {
     background: #f5f5f5;
-    
 }
 
-#sobre:not(#container-sobre){
-    
+#sobre:not(#container-sobre) {
     /* -webkit-filter: grayscale(1); */
-   /*  filter: grayscale(.5); */
+    /*  filter: grayscale(.5); */
 }
 
 #countup p {
@@ -29,26 +25,9 @@
     padding: 5px;
     background: #FFA500;
     margin: 0 0 20px;
-  }
+}
 
-  #sobre h1{
-    text-transform: uppercase;
-    font-size: 4em;
-    text-shadow: 3px 4px 5px #bababa;
-  }
-
-
-
-
-
-
-
-
-  /****************************************/
-
-
-
-
+/****************************************/
 
 /* ******************************************************
 	Animated Skills Bar
@@ -61,12 +40,19 @@
     padding: 10px;
     width: 50%;
 }
+
+#codeconSkills h2 {
+    margin-left: 46px;
+    color: rgb(150, 150, 150);
+}
+
 #codeconSkills img {
     width: 20%;
     height: 10%;
     margin: auto 35%;
     padding: 10px;
 }
+
 .codeconSkillbar {
     box-shadow: 3px 4px 5px #bababa;
     width: 90%;
@@ -75,41 +61,54 @@
     background: rgba(17, 17, 17, 0.05);
     margin: 20px auto;
 }
+
 #codeconHTML {
-    width: 100%;
+    width: 70%;
     animation: Animate-HTML 4s;
     -webkit-animation: Animate-HTML 4s;
     -moz-animation: Animate-HTML 4s;
     -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color: #ea8564;
+    background-color: #F26525;
 }
+
 @keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 100%}
-}@-webkit-keyframes Animate-HTML {
+
+@-webkit-keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 100%}
-}@-moz-keyframes Animate-HTML {
+
+@-moz-keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 100%}
-}@-o-keyframes Animate-HTML {
+
+@-o-keyframes Animate-HTML {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 100%}
-}
+
 #codeconCSS {
     animation: Animate-CSS 5s;
     -webkit-animation: Animate-CSS 5s;
@@ -120,206 +119,278 @@ to {
     position: absolute;
     background-color: #00e7b4;
 }
+
 @keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 70%}
-}@-webkit-keyframes Animate-CSS {
+
+@-webkit-keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 70%}
-}@-moz-keyframes Animate-CSS {
+
+@-moz-keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 70%}
-}@-o-keyframes Animate-CSS {
+
+@-o-keyframes Animate-CSS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 70%
+    }
 }
-to {
-    width: 70%}
-}
+
 #codeconjQuery {
     animation: Animate-jQuery 5s;
     -webkit-animation: Animate-jQuery 5s;
     -moz-animation: Animate-jQuery 5s;
     -o-animation: Animate-jQuery 5s;
-    width: 40%;
+    width: 60%;
     height: 50px;
     position: absolute;
     background-color: #99856d;
 }
+
 @keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-jQuery {
+
+@-webkit-keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 40%}
-}@-moz-keyframes Animate-jQuery {
+
+@-moz-keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 40%}
-}@-o-keyframes Animate-jQuery {
+
+@-o-keyframes Animate-jQuery {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 40%}
-}
+
 #codeconJS {
     animation: Animate-JS 4s;
     -webkit-animation: Animate-JS 4s;
     -moz-animation: Animate-JS 4s;
     -o-animation: Animate-JS 4s;
-    width: 65%;
+    width: 60%;
     height: 50px;
     position: absolute;
     background-color: #c44e45;
 }
+
 @keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 65%}
-}@-webkit-keyframes Animate-JS {
+
+@-webkit-keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 65%}
-}@-moz-keyframes Animate-JS {
+
+@-moz-keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 65%}
-}@-o-keyframes Animate-JS {
+
+@-o-keyframes Animate-JS {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 60%
+    }
 }
-to {
-    width: 65%}
-}
-#codeconXML {
-    animation: Animate-XML 4s;
-    -webkit-animation: Animate-XML 4s;
-    -moz-animation: Animate-XML 4s;
-    -o-animation: Animate-XML 4s;
+
+#codeconResponsive {
+    animation: Animate-Responsive 4s;
+    -webkit-animation: Animate-Responsive 4s;
+    -moz-animation: Animate-Responsive 4s;
+    -o-animation: Animate-Responsive 4s;
     width: 40%;
     height: 50px;
     position: absolute;
     background-color: #5aa669;
 }
-@keyframes Animate-XML {
+
+@keyframes Animate-Responsive {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
 }
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-XML {
+
+@-webkit-keyframes Animate-Responsive {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
 }
-to {
-    width: 40%}
-}@-moz-keyframes Animate-XML {
+
+@-moz-keyframes Animate-Responsive {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
 }
-to {
-    width: 40%}
-}@-o-keyframes Animate-XML {
+
+@-o-keyframes Animate-Responsive {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 40%
+    }
 }
-to {
-    width: 40%}
-}
+
 #codeconC {
-    animation: Animate-C 4s;
-    -webkit-animation: Animate-C 4s;
-    -moz-animation: Animate-C 4s;
-    -o-animation: Animate-C 4s;
-    width: 30%;
+    animation: Animate-C 6s;
+    -webkit-animation: Animate-C 6s;
+    -moz-animation: Animate-C 6s;
+    -o-animation: Animate-C 6s;
+    width: 50%;
     height: 50px;
     position: absolute;
     background-color: #970cc1;
 }
+
 @keyframes Animate-C {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 50%
+    }
 }
-to {
-    width: 30%}
-}@-webkit-keyframes Animate-C {
+
+@-webkit-keyframes Animate-C {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 30%
+    }
 }
-to {
-    width: 30%}
-}@-moz-keyframes Animate-C {
+
+@-moz-keyframes Animate-C {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 30%
+    }
 }
-to {
-    width: 30%}
-}@-o-keyframes Animate-C {
+
+@-o-keyframes Animate-C {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 30%
+    }
 }
-to {
-    width: 30%}
-}
+
 #codeconJAVA {
-    animation: Animate-JAVA 4s;
-    -webkit-animation: Animate-JAVA 4s;
-    -moz-animation: Animate-JAVA 4s;
-    -o-animation: Animate-JAVA 4s;
+    animation: Animate-JAVA 6s;
+    -webkit-animation: Animate-JAVA 6s;
+    -moz-animation: Animate-JAVA 6s;
+    -o-animation: Animate-JAVA 6s;
     width: 25%;
     height: 50px;
     position: absolute;
     background-color: #8e930c;
 }
+
 @keyframes Animate-JAVA {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 25%
+    }
 }
-to {
-    width: 25%}
-}@-webkit-keyframes Animate-JAVA {
+
+@-webkit-keyframes Animate-JAVA {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 25%
+    }
 }
-to {
-    width: 25%}
-}@-moz-keyframes Animate-JAVA {
+
+@-moz-keyframes Animate-JAVA {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 25%
+    }
 }
-to {
-    width: 25%}
-}@-o-keyframes Animate-JAVA {
+
+@-o-keyframes Animate-JAVA {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 25%
+    }
 }
-to {
-    width: 25%}
-}
+
 #codeconPHP {
     animation: Animate-PHP 4s;
     -webkit-animation: Animate-PHP 4s;
@@ -330,31 +401,43 @@ to {
     position: absolute;
     background-color: #5A69A6;
 }
+
 @keyframes Animate-PHP {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 50%
+    }
 }
-to {
-    width: 50%}
-}@-webkit-keyframes Animate-PHP {
+
+@-webkit-keyframes Animate-PHP {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 50%
+    }
 }
-to {
-    width: 50%}
-}@-moz-keyframes Animate-PHP {
+
+@-moz-keyframes Animate-PHP {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 50%
+    }
 }
-to {
-    width: 50%}
-}@-o-keyframes Animate-PHP {
+
+@-o-keyframes Animate-PHP {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 50%
+    }
 }
-to {
-    width: 50%}
-}
+
 #codeconSQL {
     animation: Animate-SQL 4s;
     -webkit-animation: Animate-SQL 4s;
@@ -365,31 +448,43 @@ to {
     position: absolute;
     background-color: #23b1db;
 }
+
 @keyframes Animate-SQL {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 80%
+    }
 }
-to {
-    width: 80%}
-}@-webkit-keyframes Animate-SQL {
+
+@-webkit-keyframes Animate-SQL {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 80%
+    }
 }
-to {
-    width: 80%}
-}@-moz-keyframes Animate-SQL {
+
+@-moz-keyframes Animate-SQL {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 80%
+    }
 }
-to {
-    width: 80%}
-}@-o-keyframes Animate-SQL {
+
+@-o-keyframes Animate-SQL {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 80%
+    }
 }
-to {
-    width: 80%}
-}
+
 #codeconVBNET {
     animation: Animate-VBNET 4s;
     -webkit-animation: Animate-VBNET 4s;
@@ -400,42 +495,53 @@ to {
     position: absolute;
     background-color: #f8a51e;
 }
+
 @keyframes Animate-VBNET {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 35%
+    }
 }
-to {
-    width: 35%}
-}@-webkit-keyframes Animate-VBNET {
+
+@-webkit-keyframes Animate-VBNET {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 35%
+    }
 }
-to {
-    width: 35%}
-}@-moz-keyframes Animate-VBNET {
+
+@-moz-keyframes Animate-VBNET {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 35%
+    }
 }
-to {
-    width: 35%}
-}@-o-keyframes Animate-VBNET {
+
+@-o-keyframes Animate-VBNET {
     from {
-    width: 10px;
+        width: 10px;
+    }
+    to {
+        width: 35%
+    }
 }
-to {
-    width: 35%}
-}
+
 .codeconSkillArea {
     z-index: 1;
     float: left;
-   
     margin-top: 15px;
     margin-left: 15px;
     text-shadow: none;
     color: #fff;
-    
     font-size: 18px;
 }
+
 .PercentText {
     z-index: 3;
     position: relative;
@@ -444,7 +550,6 @@ to {
     float: right;
     text-shadow: none;
     color: #fff;
-    
     font-size: 18px;
 }
 
@@ -452,7 +557,6 @@ to {
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,100,200,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Exo:400,400italic,500,600,700,800,900,300,200,100);
-	
 /*
 	font-family: 'PT Sans', sans-serif;
 	font-family: 'Lato', sans-serif;
@@ -461,35 +565,34 @@ to {
 	
 */
 
-
-
-.container > header,
+.container>header,
 .codecon-top {
-	font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.container > header {
-	margin: 0 auto;
-	padding: 2em;
-	text-align: center;
-	color: #89867e;
+.container>header {
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    color: #89867e;
 }
 
-.container > header h1 {
-	font-size: 2.625em;
-	line-height: 1.3;
-	margin: 0;
-	font-weight: 300;
+.container>header h1 {
+    font-size: 2.625em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 300;
 }
 
-.container > header span {
-	display: block;
-	font-size: 60%;
-	color: #ceccc6;
-	padding: 0 0 0.6em 0.1em;
+.container>header span {
+    display: block;
+    font-size: 60%;
+    color: #ceccc6;
+    padding: 0 0 0.6em 0.1em;
 }
 
 /* To Navigation Style */
+
 .codecon-top {
     background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
     font-size: 0.69em;
@@ -500,70 +603,46 @@ to {
 }
 
 .codecon-top a {
-	text-decoration: none;
-	padding: 0 1em;
-	letter-spacing: 0.1em;
-	color: #888;
-	display: inline-block;
+    text-decoration: none;
+    padding: 0 1em;
+    letter-spacing: 0.1em;
+    color: #888;
+    display: inline-block;
 }
 
 .codecon-top a:hover {
-	background: rgba(255,255,255,0.95);
-	color: #716d62;
+    background: rgba(255, 255, 255, 0.95);
+    color: #716d62;
 }
 
 .codecon-top span.right {
-	float: right;
+    float: right;
 }
 
 .codecon-top span.right a {
-	float: left;
-	display: block;
+    float: left;
+    display: block;
 }
 
-.container > section {
+.container>section {
     margin: 0 auto;
     padding: 3em;
     text-align: center;
 }
 
+@media screen and (max-width: 25em) {}
 
-
-
-
-@media screen and (max-width: 25em) {
-
-	
-
+hr {
+    width: 100%;
 }
 
-
-hr { width: 100%; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /********/
+
 * {
     box-sizing: border-box;
-  }
-  
-  .item {
+}
+
+.item {
     width: 200px;
     height: 200px;
     margin: 50px auto;
@@ -572,5 +651,19 @@ hr { width: 100%; }
     text-align: center;
     color: #FFF;
     font-size: 3em;
-  }
-  
+}
+
+.vertical {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0;
+    width: 20px;
+    position: relative;
+    font-size: 2em;
+    bottom: 60px;
+}
