@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-    $("body > div:nth-child(4) > a > img").hide();
+    $('img[alt="000webhost logo"]').hide();
+    $('img[alt="www.000webhost.com"]').hide();
 
     $("html").animate({
         scrollTop: 0
@@ -9,6 +10,7 @@ $(document).ready(function () {
         duration: 1200,
     })
 
+    funcoes.efeitos.openMenuAuto();
     funcoes.eventos.trocarCorMenu();
     funcoes.eventos.timer();
     funcoes.efeitos.preloader();
@@ -19,6 +21,7 @@ $(document).ready(function () {
     funcoes.efeitos.efeitoHr();
     funcoes.efeitos.efeitoTyped();
     funcoes.eventos.voltarAoTopo();
+    
 
     // Ajustando formato do cursor
     $(".typed-cursor").css("font-size", "100px");
@@ -95,6 +98,7 @@ var funcoes = {
             // Ajuste no tempo até que a mensagem desapareça 
             setTimeout(function () {
                 $("p.animacao1").addClass("fadeOutLeft");
+                
             }, 7000);
         },
 
@@ -118,6 +122,13 @@ var funcoes = {
                 $("#preloader").remove();
             }, 1000);
         },
+
+        openMenuAuto: function() {
+            setTimeout(function(){
+                $("#menuToggle > input").click()
+            },1000)
+            
+        }
     },
     eventos: {
         trocarCorMenu: function () {
