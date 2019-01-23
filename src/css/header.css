@@ -48,7 +48,7 @@
     display: inline-block;
     height: 100%;
     margin: 0 30px;
-    font-size: 0.7em;
+    font-size: 1.5vh;
     font-weight: bold;
     position: relative;
     text-transform: uppercase;
@@ -127,3 +127,7 @@
 .typed-cursor {
     font-size: 6vw !important
 }
+
+
+/*Media Query*/
+

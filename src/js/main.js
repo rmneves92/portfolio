@@ -1,11 +1,6 @@
 $(document).ready(function () {
 
-    setTimeout(function () {
-        $("#preloader").remove();
-    }, 1000);
-
-
-    $('img[alt="000webhost logo"]').hide();
+    $("body > div:nth-child(4) > a > img").hide();
 
     $("html").animate({
         scrollTop: 0
@@ -14,12 +9,11 @@ $(document).ready(function () {
         duration: 1200,
     })
 
-
-
     funcoes.eventos.trocarCorMenu();
     funcoes.eventos.timer();
     funcoes.efeitos.preloader();
 
+    funcoes.efeitos.efeitoToast();
     funcoes.efeitos.efeitoLazy();
     funcoes.efeitos.efeitoLightbox();
     funcoes.efeitos.efeitoHr();
@@ -41,6 +35,17 @@ $(document).ready(function () {
 
 var funcoes = {
     efeitos: {
+        // Toast ao clicar no icone Telefone
+        efeitoToast: function(){
+            $('.telefone').click(function () {
+                $('.toast').toggleClass('on');
+            });
+        
+            $('.close').click(function () {
+                $('.toast').removeClass('on');
+            });  
+        },
+
         // Fade in ao interagir com o scroll
         efeitoLazy: function () {
             $('.lazy').Lazy({
@@ -108,6 +113,10 @@ var funcoes = {
             $(window).on("load", function () {
                 $("#preloader").fadeOut(500);
             });
+
+            setTimeout(function () {
+                $("#preloader").remove();
+            }, 1000);
         },
     },
     eventos: {

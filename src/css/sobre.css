@@ -6,7 +6,7 @@
 }
 
 #container-sobre span {
-    color: #00e7b4;
+    color: #04a380;
     font-size: 101%;
     font-weight: bold;
 }
@@ -297,7 +297,7 @@
     }
 }
 
-#codeconC {
+#codeconReact {
     animation: Animate-C 6s;
     -webkit-animation: Animate-C 6s;
     -moz-animation: Animate-C 6s;
@@ -313,7 +313,7 @@
         width: 10px;
     }
     to {
-        width: 50%
+        width: 20%
     }
 }
 
@@ -322,7 +322,7 @@
         width: 10px;
     }
     to {
-        width: 30%
+        width: 20%
     }
 }
 
@@ -331,7 +331,7 @@
         width: 10px;
     }
     to {
-        width: 30%
+        width: 20%
     }
 }
 
@@ -340,7 +340,7 @@
         width: 10px;
     }
     to {
-        width: 30%
+        width: 20%
     }
 }
 
